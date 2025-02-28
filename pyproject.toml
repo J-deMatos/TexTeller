@@ -1,0 +1,51 @@
+[project]
+name = "texteller"
+authors = [
+    { name="OleehyO", email="leehy0357@gmail.com" }
+]
+version = "0.1.2"
+description = "Texteller is a tool for converting latex image to text"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.4.0",
+    "augraphy>=8.2.6",
+    "datasets>=3.3.2",
+    "evaluate>=0.4.3",
+    "onnx>=1.17.0",
+    "onnxruntime>=1.20.1",
+    "onnxruntime-gpu>=1.20.1 ; sys_platform == 'linux'",
+    "opencv-python>=4.11.0.86",
+    "optimum>=1.24.0",
+    "pyclipper>=1.3.0.post6",
+    "shapely>=2.0.7",
+    "streamlit>=1.42.2",
+    "streamlit-paste-button>=0.1.2",
+    "tensorboardx>=2.6.2.2",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "transformers==4.45.2",
+]
+
+[tool.ruff]
+exclude = ['.git', '.mypy_cache', '.ruff_cache', '.venv', 'dist']
+target-version = 'py310'
+line-length = 100
+
+[tool.ruff.format]
+line-ending = 'lf'
+quote-style = 'preserve'
+
+[tool.ruff.lint]
+select = ["E", "W"]
+ignore = [
+    "E999",
+    "EXE001",
+    "UP009",
+    "F401",
+    "TID252",
+    "F403",
+    "F841",
+    "E501",
+    "W293",
+]
