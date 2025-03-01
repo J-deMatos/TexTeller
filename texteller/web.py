@@ -9,15 +9,15 @@ import streamlit as st
 from PIL import Image
 from streamlit_paste_button import paste_image_button as pbutton
 from onnxruntime import InferenceSession
-from models.thrid_party.paddleocr.infer import predict_det, predict_rec
-from models.thrid_party.paddleocr.infer import utility
+from texteller.models.thrid_party.paddleocr.infer import predict_det, predict_rec
+from texteller.models.thrid_party.paddleocr.infer import utility
 
-from models.utils import mix_inference
-from models.det_model.inference import PredictConfig
+from texteller.models.utils import mix_inference
+from texteller.models.det_model.inference import PredictConfig
 
-from models.ocr_model.model.TexTeller import TexTeller
-from models.ocr_model.utils.inference import inference as latex_recognition
-from models.ocr_model.utils.to_katex import to_katex
+from texteller.models.ocr_model.model.TexTeller import TexTeller
+from texteller.models.ocr_model.utils.inference import inference as latex_recognition
+from texteller.models.ocr_model.utils.to_katex import to_katex
 
 
 st.set_page_config(page_title="TexTeller", page_icon="🧮")

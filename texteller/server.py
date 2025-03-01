@@ -11,11 +11,11 @@ from ray import serve
 from ray.serve.handle import DeploymentHandle
 from onnxruntime import InferenceSession
 
-from models.ocr_model.utils.inference import inference as rec_inference
-from models.det_model.inference import predict as det_inference
-from models.ocr_model.model.TexTeller import TexTeller
-from models.det_model.inference import PredictConfig
-from models.ocr_model.utils.to_katex import to_katex
+from texteller.models.ocr_model.utils.inference import inference as rec_inference
+from texteller.models.det_model.inference import predict as det_inference
+from texteller.models.ocr_model.model.TexTeller import TexTeller
+from texteller.models.det_model.inference import PredictConfig
+from texteller.models.ocr_model.utils.to_katex import to_katex
 
 
 PYTHON_VERSION = str(sys.version_info.major) + '.' + str(sys.version_info.minor)
