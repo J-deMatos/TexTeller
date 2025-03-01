@@ -123,6 +123,7 @@ def to_katex(formula: str) -> str:
     ]
     for old_ins, new_ins in zip(origin_instructions, origin_instructions):
         res = change_all(res, old_ins, new_ins, r'$', r'$', '{', '}')
+    res = change_all(res, r'\mathbf', r'\bm', r'{', r'}', r'{', r'}')
     res = change_all(res, r'\boldmath ', r'\bm', r'{', r'}', r'{', r'}')
     res = change_all(res, r'\boldmath', r'\bm', r'{', r'}', r'{', r'}')
     res = change_all(res, r'\boldmath ', r'\bm', r'$', r'$', r'{', r'}')
@@ -130,6 +131,9 @@ def to_katex(formula: str) -> str:
     res = change_all(res, r'\scriptsize', r'\scriptsize', r'$', r'$', r'{', r'}')
     res = change_all(res, r'\emph', r'\textit', r'{', r'}', r'{', r'}')
     res = change_all(res, r'\emph ', r'\textit', r'{', r'}', r'{', r'}')
+
+    # remove bold command
+    res = change_all(res, r'\bm', r' ', r'{', r'}', r'', r'')
 
     origin_instructions = [
         r'\left',
