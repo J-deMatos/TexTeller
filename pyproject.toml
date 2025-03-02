@@ -54,6 +54,7 @@ ignore = [
     "F841",
     "E501",
     "W293",
+    "E741",
 ]
 
 [tool.hatch.build.targets.wheel]
