@@ -1,5 +1,7 @@
 import re
 
+from .latex_formatter import format_latex
+
 
 def change(input_str, old_inst, new_inst, old_surr_l, old_surr_r, new_surr_l, new_surr_r):
     result = ""
@@ -185,4 +187,8 @@ def to_katex(formula: str) -> str:
     # remove extra spaces (keeping only one)
     res = re.sub(r' +', ' ', res)
 
-    return res.strip()
+    # format latex
+    res = res.strip()
+    res, logs = format_latex(res)
+
+    return res
