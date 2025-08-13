@@ -9,7 +9,7 @@
 
   [![](https://img.shields.io/badge/API-文档-orange.svg?logo=read-the-docs)](https://oleehyo.github.io/TexTeller/)
   [![](https://img.shields.io/badge/docker-镜像-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
-  [![](https://img.shields.io/badge/数据-Texteller1.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas)
+  [![](https://img.shields.io/badge/数据-Texteller3.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)
   [![](https://img.shields.io/badge/权重-Texteller3.0-yellow.svg?logo=huggingface)](https://huggingface.co/OleehyO/TexTeller)
   [![](https://img.shields.io/badge/协议-Apache_2.0-blue.svg?logo=github)](https://opensource.org/licenses/Apache-2.0)
 
