@@ -44,7 +44,6 @@ quote-style = "double"
 [tool.ruff.lint]
 select = ["E", "W"]
 ignore = [
-    "E999",
     "EXE001",
     "UP009",
     "F401",
