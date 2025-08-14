@@ -1,16 +1,17 @@
-📄 中文 | [English](./README.md)
+📄 中文 | [English](../README.md)
 
 <div align="center">
     <h1>
-        <img src="./fire.svg" width=30, height=30>
+        <img src="./fire.svg" width=60, height=60>
         𝚃𝚎𝚡𝚃𝚎𝚕𝚕𝚎𝚛
-        <img src="./fire.svg" width=30, height=30>
+        <img src="./fire.svg" width=60, height=60>
     </h1>
 
   [![](https://img.shields.io/badge/API-文档-orange.svg?logo=read-the-docs)](https://oleehyo.github.io/TexTeller/)
+  [![arXiv](https://img.shields.io/badge/arXiv-2508.09200-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.09220)
   [![](https://img.shields.io/badge/docker-镜像-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
-  [![](https://img.shields.io/badge/数据-Texteller3.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)
-  [![](https://img.shields.io/badge/权重-Texteller3.0-yellow.svg?logo=huggingface)](https://huggingface.co/OleehyO/TexTeller)
+  [![](https://img.shields.io/badge/数据-TexTeller3.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)
+  [![](https://img.shields.io/badge/权重-TexTeller3.0-yellow.svg?logo=huggingface)](https://huggingface.co/OleehyO/TexTeller)
   [![](https://img.shields.io/badge/协议-Apache_2.0-blue.svg?logo=github)](https://opensource.org/licenses/Apache-2.0)
 
 </div>
@@ -70,7 +71,7 @@ TexTeller 使用 **8千万图像-公式对** 进行训练（前代数据集可�
 
 - [2024-03-25] TexTeller2.0 发布！TexTeller2.0 的训练数据增至750万（是前代的15倍并提升了数据质量）。训练后的 TexTeller2.0 在测试集中展现了**更优性能**，特别是在识别罕见符号、复杂多行公式和矩阵方面表现突出。
 
-  > [此处](./assets/test.pdf) 展示了更多测试图像及各类识别模型的横向对比。
+  > [此处](./test.pdf) 展示了更多测试图像及各类识别模型的横向对比。
 
 ## 🚀 快速开始
 

@@ -2,15 +2,16 @@
 
 <div align="center">
     <h1>
-        <img src="./assets/fire.svg" width=30, height=30>
+        <img src="./assets/fire.svg" width=60, height=60>
         𝚃𝚎𝚡𝚃𝚎𝚕𝚕𝚎𝚛
-        <img src="./assets/fire.svg" width=30, height=30>
+        <img src="./assets/fire.svg" width=60, height=60>
     </h1>
 
   [![](https://img.shields.io/badge/API-Docs-orange.svg?logo=read-the-docs)](https://oleehyo.github.io/TexTeller/)
-  [![](https://img.shields.io/badge/docker-pull-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
+  [![arXiv](https://img.shields.io/badge/arXiv-2508.09200-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.09220)
   [![](https://img.shields.io/badge/Data-Texteller3.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)
   [![](https://img.shields.io/badge/Weights-Texteller3.0-yellow.svg?logo=huggingface)](https://huggingface.co/OleehyO/TexTeller)
+  [![](https://img.shields.io/badge/docker-pull-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
   [![](https://img.shields.io/badge/License-Apache_2.0-blue.svg?logo=github)](https://opensource.org/licenses/Apache-2.0)
 
 </div>
