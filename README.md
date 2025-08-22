@@ -25,6 +25,8 @@ TexTeller was trained with **80M image-formula pairs** (previous dataset can be 
 >[!NOTE]
 > If you would like to provide feedback or suggestions for this project, feel free to start a discussion in the [Discussions section](https://github.com/OleehyO/TexTeller/discussions).
 
+
+
 ---
 
 <table>
@@ -58,6 +60,10 @@ TexTeller was trained with **80M image-formula pairs** (previous dataset can be 
 </table>
 
 ## 📮 Change Log
+
+- [2025-08-15] We have published the [technical report](https://arxiv.org/abs/2508.09220) of TexTeller. The model evaluated on the Benchmark (which was trained from scratch and had its handwritten subset filtered based on the test set) is available at https://huggingface.co/OleehyO/TexTeller_en. **Please do not directly use the open-source version of TexTeller3.0 to reproduce the experimental results of handwritten formulas**, as this model includes the test sets of these benchmarks.
+
+- [2025-08-15] We have open-sourced the [training dataset](https://huggingface.co/datasets/OleehyO/latex-formulas-80M) of TexTeller 3.0. Please note that the handwritten* subset of this dataset is collected from existing open-source handwritten datasets (including both training and test sets). If you need to use the handwritten* subset for your experimental ablation, please filter the test labels first.
 
 - [2024-06-06] **TexTeller3.0 released!** The training data has been increased to **80M** (**10x more than** TexTeller2.0 and also improved in data diversity). TexTeller3.0's new features:
 

@@ -9,9 +9,9 @@
 
   [![](https://img.shields.io/badge/API-文档-orange.svg?logo=read-the-docs)](https://oleehyo.github.io/TexTeller/)
   [![arXiv](https://img.shields.io/badge/arXiv-2508.09200-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.09220)
-  [![](https://img.shields.io/badge/docker-镜像-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
   [![](https://img.shields.io/badge/数据-TexTeller3.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)
   [![](https://img.shields.io/badge/权重-TexTeller3.0-yellow.svg?logo=huggingface)](https://huggingface.co/OleehyO/TexTeller)
+  [![](https://img.shields.io/badge/docker-镜像-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
   [![](https://img.shields.io/badge/协议-Apache_2.0-blue.svg?logo=github)](https://opensource.org/licenses/Apache-2.0)
 
 </div>
@@ -58,6 +58,10 @@ TexTeller 使用 **8千万图像-公式对** 进行训练（前代数据集可�
 </table>
 
 ## 📮 更新日志
+
+- [2025-08-15] 我们发布了 TexTeller 的[技术报告](https://arxiv.org/abs/2508.09220)。在基准集上评测的模型（从零训练，且对手写子集按测试集进行了过滤）可在 https://huggingface.co/OleehyO/TexTeller_en 获取。**请不要直接使用开源的 TexTeller3.0 版本来复现实验中的手写公式结果**，因为该模型的训练包含了这些基准的测试集。
+
+- [2025-08-15] 我们开源了 TexTeller 3.0 的[训练数据集](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)。其中handwritten* 子集来自现有的开源手写数据集（**包含训练集和测试集**），请不要将该子集用于实验消融。
 
 - [2024-06-06] **TexTeller3.0 发布！** 训练数据增至 **8千万**（是 TexTeller2.0 的 **10倍** 并提升了数据多样性）。TexTeller3.0 新特性：
 
