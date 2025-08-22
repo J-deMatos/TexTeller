@@ -8,7 +8,6 @@
     </h1>
 
   [![](https://img.shields.io/badge/API-Docs-orange.svg?logo=read-the-docs)](https://oleehyo.github.io/TexTeller/)
-  [![arXiv](https://img.shields.io/badge/arXiv-2508.09200-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.09220)
   [![](https://img.shields.io/badge/Data-Texteller3.0-brightgreen.svg?logo=huggingface)](https://huggingface.co/datasets/OleehyO/latex-formulas-80M)
   [![](https://img.shields.io/badge/Weights-Texteller3.0-yellow.svg?logo=huggingface)](https://huggingface.co/OleehyO/TexTeller)
   [![](https://img.shields.io/badge/docker-pull-green.svg?logo=docker)](https://hub.docker.com/r/oleehyo/texteller)
@@ -61,7 +60,7 @@ TexTeller was trained with **80M image-formula pairs** (previous dataset can be 
 
 ## 📮 Change Log
 
-- [2025-08-15] We have published the [technical report](https://arxiv.org/abs/2508.09220) of TexTeller. The model evaluated on the Benchmark (which was trained from scratch and had its handwritten subset filtered based on the test set) is available at https://huggingface.co/OleehyO/TexTeller_en. **Please do not directly use the open-source version of TexTeller3.0 to reproduce the experimental results of handwritten formulas**, as this model includes the test sets of these benchmarks.
+<!-- - [2025-08-15] We have published the [technical report](https://arxiv.org/abs/2508.09220) of TexTeller. The model evaluated on the Benchmark (which was trained from scratch and had its handwritten subset filtered based on the test set) is available at https://huggingface.co/OleehyO/TexTeller_en. **Please do not directly use the open-source version of TexTeller3.0 to reproduce the experimental results of handwritten formulas**, as this model includes the test sets of these benchmarks. -->
 
 - [2025-08-15] We have open-sourced the [training dataset](https://huggingface.co/datasets/OleehyO/latex-formulas-80M) of TexTeller 3.0. Please note that the handwritten* subset of this dataset is collected from existing open-source handwritten datasets (including both training and test sets). If you need to use the handwritten* subset for your experimental ablation, please filter the test labels first.
 
