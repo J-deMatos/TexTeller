@@ -127,6 +127,19 @@ We use [ray serve](https://github.com/ray-project/ray) to provide an API server 
 texteller launch
 ```
 
+## 🔄 Daemon Mode
+
+For continuous monitoring and automatic LaTeX prediction, we provide a daemon mode that monitors a file for changes and automatically processes images. See the [`daemon/`](./daemon/) folder for details.
+
+**Quick Start:**
+```bash
+cd daemon
+bash safe_setup_daemon.sh
+python run_optimized_daemon.py
+```
+
+The daemon will monitor `~/.temp/latexPredict.png` for changes and automatically predict LaTeX when the file is updated.
+
 | Parameter | Description |
 | --------- | -------- |
 | `-ckpt` | The path to the weights file,*default is TexTeller's pretrained weights*. |

@@ -1,6 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,pycharm,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,pycharm,python
-
+daemon.sh
 ### macOS ###
 # General
 .DS_Store
@@ -347,3 +347,10 @@ uv.lock
 **/*.png
 **/*.jpg
 **/augraphy_cache
+
+# TexTeller Daemon Virtual Environment
+daemon_venv/
+
+# Daemon temporary files
+daemon/*.log
+daemon/*.tmp

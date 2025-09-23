@@ -1,0 +1,20 @@
+# Complete requirements for the TexTeller LaTeX Predictor Daemon
+# This includes all TexTeller dependencies plus daemon-specific requirements
+
+# Core TexTeller dependencies
+click>=8.1.8
+colorama>=0.4.6
+opencv-python-headless>=4.11.0.86
+pyclipper>=1.3.0.post6
+shapely>=2.1.0
+torch>=2.6.0
+torchvision>=0.21.0
+transformers==4.47
+wget>=3.2
+optimum[onnxruntime]>=1.24.0
+
+# Daemon-specific requirements
+watchdog>=3.0.0
+
+# GPU support for ONNX Runtime
+onnxruntime-gpu>=1.21.0
