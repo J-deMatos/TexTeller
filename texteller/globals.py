@@ -1,4 +1,5 @@
 import logging
+import os
 from pathlib import Path
 
 
@@ -35,6 +36,14 @@ class Globals:
             self.repo_name = "OleehyO/TexTeller"
             self.logging_level = logging.INFO
             self.cache_dir = Path("~/.cache/texteller").expanduser().resolve()
+            # Control whether HTTP/webserver functionality is allowed
+            env_enable_http = os.getenv("TEXTELLER_ENABLE_HTTP")
+            if env_enable_http is None:
+                # Default: disable HTTP/webserver functionality unless explicitly enabled
+                self.enable_http = False
+            else:
+                val = env_enable_http.strip().lower()
+                self.enable_http = val in ("1", "true", "yes", "on")
             self.__class__._initialized = True
 
     def __repr__(self):

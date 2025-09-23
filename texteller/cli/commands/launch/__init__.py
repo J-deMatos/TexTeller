@@ -65,6 +65,11 @@ from texteller.utils import get_device
     default=False,
     help="Use ONNX runtime",
 )
+@click.option(
+    "--enable-http/--disable-http",
+    default=None,
+    help="Enable or disable HTTP/webserver functionality (defaults to global setting)",
+)
 def launch(
     checkpoint_dir,
     tokenizer_dir,
@@ -74,6 +79,7 @@ def launch(
     ngpu_per_replica,
     num_beams,
     use_onnx,
+    enable_http,
 ):
     """Launch the api server"""
     device = get_device()
@@ -90,6 +96,17 @@ def launch(
     Globals().ncpu_per_replica = ncpu_per_replica
     Globals().ngpu_per_replica = ngpu_per_replica
     from texteller.cli.commands.launch.server import Ingress, TexTellerServer
+
+    if enable_http is None:
+        enable_http = Globals().enable_http
+    if not enable_http:
+        click.echo(
+            click.style(
+                "HTTP/webserver is disabled. Use --enable-http or set TEXTELLER_ENABLE_HTTP=1 to enable.",
+                fg="yellow",
+            )
+        )
+        sys.exit(1)
 
     serve.start(http_options={"host": "0.0.0.0", "port": port})
     rec_server = TexTellerServer.bind(
