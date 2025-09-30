@@ -118,6 +118,13 @@ def img2latex(
 
     res = [format_latex(r) for r in res]
     res = [add_newlines(r) for r in res]
+    
+    # Convert \[ and \] to $ and $ at the end of processing
+    res = [r.replace(r'\[', '$').replace(r'\]', '$') for r in res]
+    
+    # Remove small spacing LaTeX commands
+    res = [r.replace(r'\,', '').replace(r'\:', '').replace(r'\;', '').replace(r'\!', '').replace(r'\quad', '').replace(r'\qquad', '') for r in res]
+    
     return res
 
 
